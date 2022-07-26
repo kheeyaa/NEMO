@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from 'components/BasicLayout/Header';
 import Nav from 'components/BasicLayout/Nav';
 import { Outlet } from 'react-router-dom';
 import { css } from '@emotion/react';
@@ -9,7 +8,6 @@ import { pxToRem } from 'utils/style/pxToRem';
 function BasicLayout() {
   return (
     <div css={basicLayoutStyle}>
-      <Header />
       <main>
         <Outlet />
       </main>
