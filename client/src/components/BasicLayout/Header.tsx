@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { css } from '@emotion/react';
 import { colors } from 'const/style/colors';
 import { pxToRem } from 'utils/style/pxToRem';
 import { MOBILE_WIDTH } from 'const/style/size';
 
-function Header() {
+interface HeaderProps {
+  LeftContent?: ReactElement;
+  MiddleContent?: ReactElement;
+  RightContent?: ReactElement;
+}
+
+function Header({ LeftContent, MiddleContent, RightContent }: HeaderProps) {
   return (
     <header css={headerStyle}>
-      <div className="left">왼쪽</div>
-      <div className="middle">가운데</div>
-      <div className="right">오른쪽</div>
+      <div className="left">{LeftContent}</div>
+      <div className="middle">{MiddleContent}</div>
+      <div className="right">{RightContent}</div>
     </header>
   );
 }
