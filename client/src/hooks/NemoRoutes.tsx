@@ -20,8 +20,8 @@ function NemoRoutes(): ReactElement {
             <Route index element={<Home />} />
             <Route path="trends" element={<Trends />} />
             <Route path="my-storage" element={<MyStorage />} />
-            <Route path="/:userId" element={<UserPage />} />
-            <Route path="/:userId/:pictureId" element={<PictureDetail />} />
+            <Route path=":userId" element={<UserPage />} />
+            <Route path=":userId/:pictureId" element={<PictureDetail />} />
           </Route>
 
           <Route path="signin" element={<Signin />} />
