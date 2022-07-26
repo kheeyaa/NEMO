@@ -17,22 +17,22 @@ const navigators: Navigator[] = [
   {
     to: '/',
     text: '홈',
-    icon: <Icon type="Home" size={24} />,
+    icon: <Icon type="Home" />,
   },
   {
     to: '/trends',
     text: '인기 상승',
-    icon: <Icon type="Trends" size={24} />,
+    icon: <Icon type="Trends" />,
   },
   {
     to: '/draw-edit',
     text: '그림 그리기',
-    icon: <Icon type="PaintBrush" size={24} />,
+    icon: <Icon type="PaintBrush" />,
   },
   {
     to: '/my-store',
     text: '마이 페이지',
-    icon: <Icon type="Profile" size={24} />,
+    icon: <Icon type="Profile" />,
   },
 ];
 
