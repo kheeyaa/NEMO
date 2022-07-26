@@ -1,18 +1,11 @@
 import Header from 'components/BasicLayout/Header';
+import Logo from 'components/BasicLayout/HeaderItems/Logo';
 import React from 'react';
 
 function Home() {
-  const LeftContent = <div>왼쪽</div>;
-  const MiddleContent = <div>가운데</div>;
-  const RightContent = <div>오른쪽</div>;
-
   return (
     <>
-      <Header
-        LeftContent={LeftContent}
-        MiddleContent={MiddleContent}
-        RightContent={RightContent}
-      />
+      <Header MiddleContent={<Logo />} />
       Home
     </>
   );

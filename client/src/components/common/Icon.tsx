@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import * as icons from 'assets/svg';
+import * as icons from 'assets/svg/icons';
 import { css } from '@emotion/react';
 import { pxToRem } from 'utils/style/pxToRem';
 import { colors } from 'const/style/colors';
@@ -16,7 +16,7 @@ export interface IconProps {
 
 function Icon({
   type,
-  size = 30,
+  size = 24,
   strokeColor = colors.black[100],
   rotateDeg = 0,
 }: IconProps): ReactElement {
