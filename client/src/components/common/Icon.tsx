@@ -11,12 +11,14 @@ export interface IconProps {
   type: IconType;
   size?: number;
   strokeColor?: string;
+  rotateDeg?: number;
 }
 
 function Icon({
   type,
   size = 30,
   strokeColor = colors.black[100],
+  rotateDeg = 0,
 }: IconProps): ReactElement {
   const SVG = icons[type];
 
@@ -26,6 +28,7 @@ function Icon({
         width: ${pxToRem(size)};
         height: auto;
         color: ${strokeColor};
+        transform: rotate(${rotateDeg}deg);
       `}
     />
   );
