@@ -1,0 +1,13 @@
+export { ReactComponent as ArrowArcLeft } from 'assets/svg/ArrowArcLeft.svg';
+export { ReactComponent as ArrowArcRight } from 'assets/svg/ArrowArcRight.svg';
+export { ReactComponent as CheckCircle } from 'assets/svg/CheckCircle.svg';
+export { ReactComponent as Close } from 'assets/svg/Close.svg';
+export { ReactComponent as Eraser } from 'assets/svg/Eraser.svg';
+export { ReactComponent as Eye } from 'assets/svg/Eye.svg';
+export { ReactComponent as Eyedropper } from 'assets/svg/Eyedropper.svg';
+export { ReactComponent as Home } from 'assets/svg/Home.svg';
+export { ReactComponent as PaintBrush } from 'assets/svg/PaintBrush.svg';
+export { ReactComponent as PaintBucket } from 'assets/svg/PaintBucket.svg';
+export { ReactComponent as Plus } from 'assets/svg/Plus.svg';
+export { ReactComponent as Profile } from 'assets/svg/Profile.svg';
+export { ReactComponent as Trends } from 'assets/svg/Trends.svg';
