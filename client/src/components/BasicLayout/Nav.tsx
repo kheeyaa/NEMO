@@ -1,26 +1,38 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { css } from '@emotion/react';
 import { colors } from 'const/style/colors';
 import { MOBILE_WIDTH } from 'const/style/size';
 import { Link, useLocation } from 'react-router-dom';
 import { pxToRem } from 'utils/style/pxToRem';
+import Icon from 'components/common/Icon';
+import A11yHidden from 'components/common/A11yHidden';
 
-const navigators = [
+interface Navigator {
+  to: string;
+  text: string;
+  icon: ReactElement;
+}
+
+const navigators: Navigator[] = [
   {
     to: '/',
     text: '홈',
+    icon: <Icon type="Home" size={24} />,
   },
   {
     to: '/trends',
     text: '인기 상승',
+    icon: <Icon type="Trends" size={24} />,
   },
   {
     to: '/draw-edit',
     text: '그림 그리기',
+    icon: <Icon type="PaintBrush" size={24} />,
   },
   {
     to: '/my-store',
     text: '마이 페이지',
+    icon: <Icon type="Profile" size={24} />,
   },
 ];
 
@@ -30,9 +42,12 @@ function Nav() {
   return (
     <nav css={navStyle}>
       <ul>
-        {navigators.map(({ to, text }) => (
+        {navigators.map(({ to, text, icon }) => (
           <li key={to} className={pathname === to ? 'active' : ''}>
-            <Link to={to}>{text}</Link>
+            <Link to={to}>
+              <A11yHidden>{text}</A11yHidden>
+              {icon}
+            </Link>
           </li>
         ))}
       </ul>
@@ -44,7 +59,6 @@ const navStyle = css`
   max-width: ${MOBILE_WIDTH};
   width: 100%;
   height: ${pxToRem(64)};
-  border-top: 1px solid ${colors.gray[200]};
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
