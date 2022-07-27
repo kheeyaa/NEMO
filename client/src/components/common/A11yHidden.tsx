@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react';
 interface A11yHiddenProps {
   as?: string;
   classNames?: string[];
-  children: string;
+  children: string | ReactElement;
 }
 
 export default function A11yHidden({
