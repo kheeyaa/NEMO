@@ -17,16 +17,13 @@ function BasicLayout() {
 }
 
 const basicLayoutStyle = css`
+  box-sizing: border-box;
   max-width: ${MOBILE_WIDTH};
   min-height: 100vh;
-  background-color: white;
   margin: 0 auto;
-  margin-top: ${pxToRem(44)};
-  margin-bottom: ${pxToRem(64)};
-
-  main {
-    height: 300vh;
-  }
+  padding-top: ${pxToRem(44)};
+  padding-bottom: ${pxToRem(64)};
+  background-color: white;
 `;
 
 export default BasicLayout;
