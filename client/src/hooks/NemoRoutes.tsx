@@ -1,4 +1,5 @@
 import BasicLayout from 'layout/BasicLayout';
+import FullLayout from 'layout/FullLayout';
 import App from 'page/App';
 import DrawEdit from 'page/DrawEdit';
 import Home from 'page/Home';
@@ -24,9 +25,11 @@ function NemoRoutes(): ReactElement {
             <Route path=":userId/:pictureId" element={<PictureDetail />} />
           </Route>
 
-          <Route path="signin" element={<Signin />} />
-          <Route path="signup" element={<Signup />} />
-          <Route path="draw-edit" element={<DrawEdit />} />
+          <Route element={<FullLayout />}>
+            <Route path="signin" element={<Signin />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="draw-edit" element={<DrawEdit />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
