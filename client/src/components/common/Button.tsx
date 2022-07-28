@@ -11,11 +11,8 @@ interface BasicButtonStyle {
   color?: string;
 }
 
-interface ButtonStyle {
+interface ButtonStyle extends BasicButtonStyle {
   width: string;
-  backgroundColor?: string;
-  border?: string;
-  color?: string;
 }
 
 interface ButtonProps
