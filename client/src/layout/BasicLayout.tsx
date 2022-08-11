@@ -18,7 +18,7 @@ function BasicLayout() {
 
 const basicLayoutStyle = css`
   box-sizing: border-box;
-  max-width: ${MOBILE_WIDTH};
+  max-width: ${pxToRem(MOBILE_WIDTH)};
   min-height: 100vh;
   margin: 0 auto;
   padding-top: ${pxToRem(44)};

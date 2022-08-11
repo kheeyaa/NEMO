@@ -107,7 +107,7 @@ function EditNav() {
 }
 
 const navStyle = css`
-  max-width: ${MOBILE_WIDTH};
+  max-width: ${pxToRem(MOBILE_WIDTH)};
   width: 100%;
   height: ${pxToRem(77 * 2)};
   box-sizing: border-box;
