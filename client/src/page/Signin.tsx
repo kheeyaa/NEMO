@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ReactComponent as LogoSvg } from 'assets/svg/logo/logo2.svg';
 import { pxToRem } from 'utils/style/pxToRem';
 import Input from 'components/Form/Input';
-import Button from 'components/common/Button';
+import Button from 'components/common/Button/Button';
 import { Link } from 'react-router-dom';
 import { colors } from 'const/style/colors';
 
