@@ -1,17 +1,15 @@
 import { css } from '@emotion/react';
-import Header from 'components/BasicLayout/Header';
-import GoToBack from 'components/BasicLayout/HeaderItems/GoToBack';
-import Menu from 'components/BasicLayout/HeaderItems/Menu';
 import EditNav from 'components/DrawEdit/Nav/EditNav';
 import Editor from 'components/DrawEdit/Editor';
 import React from 'react';
 import { pxToRem } from 'utils/style/pxToRem';
 import LineRange from 'components/DrawEdit/LineRange';
+import EditHeader from 'components/DrawEdit/EditHeader';
 
 function DrawEdit() {
   return (
     <div css={drawEditStyle}>
-      <Header LeftContent={<GoToBack />} RightContent={<Menu />} />
+      <EditHeader />
       <Editor />
       <LineRange />
       <EditNav />
