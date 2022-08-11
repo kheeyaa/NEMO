@@ -56,7 +56,7 @@ function Nav() {
 }
 
 const navStyle = css`
-  max-width: ${MOBILE_WIDTH};
+  max-width: ${pxToRem(MOBILE_WIDTH)};
   width: 100%;
   height: ${pxToRem(64)};
   box-sizing: border-box;

@@ -80,7 +80,6 @@ function Editor() {
 
     context.fillStyle = action === '브러쉬' ? color : BACK_GROUND;
     context.fillRect(pixelX, pixelY, lineWidth, lineWidth);
-    console.log('drawLine');
   };
 
   const startPaint = useCallback(
@@ -95,10 +94,6 @@ function Editor() {
     },
     [action],
   );
-
-  useEffect(() => {
-    console.log({ isPainting });
-  }, [isPainting]);
 
   const paint = useCallback(
     (event: MouseEvent) => {

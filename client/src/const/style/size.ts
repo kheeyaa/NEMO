@@ -1,2 +1,2 @@
-export const MOBILE_WIDTH = '480px';
-export const TABLET_WIDTH = '1024px';
+export const MOBILE_WIDTH = 480;
+export const TABLET_WIDTH = 1024;

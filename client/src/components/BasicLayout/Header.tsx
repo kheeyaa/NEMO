@@ -21,7 +21,7 @@ function Header({ LeftContent, MiddleContent, RightContent }: HeaderProps) {
 }
 
 const headerStyle = css`
-  max-width: ${MOBILE_WIDTH};
+  max-width: ${pxToRem(MOBILE_WIDTH)};
   width: 100%;
   height: ${pxToRem(44)};
   border-bottom: 1px solid ${colors.gray[200]};

@@ -27,7 +27,6 @@ function ValidInput({
 
     const newIsRegExpValid = regExp ? regExp.test(inputValue) : true;
     setIsRegExpValid(newIsRegExpValid);
-    console.log(newIsRegExpValid, inputValue);
   };
 
   useLayoutEffect(() => {
