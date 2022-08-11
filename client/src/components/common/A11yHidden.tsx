@@ -5,6 +5,7 @@ interface A11yHiddenProps {
   as?: string;
   classNames?: string[];
   children: string | ReactElement;
+  [key: string]: any;
 }
 
 export default function A11yHidden({

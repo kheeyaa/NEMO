@@ -13,3 +13,4 @@ export { ReactComponent as Profile } from './Profile.svg';
 export { ReactComponent as Trends } from './Trends.svg';
 export { ReactComponent as ArrowLeft } from './ArrowLeft.svg';
 export { ReactComponent as Menu } from './Menu.svg';
+export { ReactComponent as Trash } from './Trash.svg';
