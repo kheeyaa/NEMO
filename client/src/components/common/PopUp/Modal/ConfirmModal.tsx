@@ -12,6 +12,8 @@ export type ModalProps = {
   handleCancel?: () => void;
   handleConfirm?: () => void;
   close?: () => void;
+  hasConfirmBtn?: boolean;
+  hasCancelBtn?: boolean;
 };
 
 function ConfirmModal({
@@ -21,6 +23,8 @@ function ConfirmModal({
   handleCancel,
   handleConfirm,
   close,
+  hasConfirmBtn = true,
+  hasCancelBtn = true,
 }: ModalProps) {
   return (
     <div css={[confirmModalStyle, absoluteCenter]}>
@@ -31,24 +35,28 @@ function ConfirmModal({
       </p>
 
       <div className="buttonWrapper">
-        <button
-          type="button"
-          onClick={() => {
-            handleCancel && handleCancel();
-            close && close();
-          }}
-        >
-          {cancelText}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            handleConfirm && handleConfirm();
-            close && close();
-          }}
-        >
-          {confirmText}
-        </button>
+        {hasCancelBtn && (
+          <button
+            type="button"
+            onClick={() => {
+              handleCancel && handleCancel();
+              close && close();
+            }}
+          >
+            {cancelText}
+          </button>
+        )}
+        {hasConfirmBtn && (
+          <button
+            type="button"
+            onClick={() => {
+              handleConfirm && handleConfirm();
+              close && close();
+            }}
+          >
+            {confirmText}
+          </button>
+        )}
       </div>
     </div>
   );
